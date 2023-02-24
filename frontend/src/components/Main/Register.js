@@ -36,13 +36,13 @@ export default function Register() {
                 <Form method='post' action='/profile'>
                     <input type='text' name='fName' placeholder='FIRST NAME' required></input><br />
                     <input type='text' name='lName' placeholder='LAST NAME' required></input><br /><br />
-                    <input type='text' name='email' placeholder='EMAIL' required></input><br />
-                    <input type='number' name='age' placeholder='AGE' required></input><br />
-                    <input type='tel' name='number' placeholder='CONTACT NUMBER' required></input><br /><br />
+                    <input type='email' name='email' placeholder='EMAIL' required></input><br />
+                    <input type='number' name='age' placeholder='AGE' required min="0"></input><br />
+                    <input type='tel' name='number' placeholder='CONTACT NUMBER' pattern='[0-9]{10}' required></input><br /><br />
                     <input type='text' name='username' placeholder='USERNAME' value={username} onChange={(event) => setUsername(event.target.value)}></input><br />
                     <input type='password' name='password' placeholder='PASSWORD' value={password} onChange={(event) => setPassword(event.target.value)}></input><br /><br />
                     {
-                        canSubmit ? <button type='submit' className='submit-btn'>SUBMIT</button> : <button type='button' className='submit-alt'>Please enter all your details</button>
+                        canSubmit ? <button type='submit' className='submit-btn'>SUBMIT</button> : <button type='button' className='submit-alt'>Please enter your details</button>
                     }
                 </Form>
             </div>

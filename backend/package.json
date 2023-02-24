@@ -9,5 +9,14 @@
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.4",
     "nodemon": "^2.0.20"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

@@ -20,6 +20,10 @@ export default function Stats() {
     return (
         <div className='SG-subpage'>
             <h1>Stats</h1>
+            <h1>User Growth Rate</h1>
+            <h1>Daily Posts</h1>
+            <h1>Daily Visitors</h1>
+            <h1>Deletion of reported posts rate</h1>
         </div>
     )
 }
